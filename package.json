@@ -17,6 +17,9 @@
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "mongoose": "^6.1.8",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "querystring": "^0.2.1",
+    "request": "^2.88.2",
+    "spotify-url-info": "^2.2.3"
   }
 }
