@@ -22,5 +22,5 @@ const get90sRockSongsData = async()=>{
     })
 }
 
-// getIsraeliSongsData();
+getIsraeliSongsData();
 get90sRockSongsData();
