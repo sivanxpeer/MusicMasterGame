@@ -14,6 +14,7 @@ const getSong = async (req, res) => {
     try {
         const song = await Song.findOne(req.params)
         res.status(200).send(song);
+        console.log(req.body)
     }
     catch (err) {
         res.status(400).send(err.message);
@@ -25,7 +26,7 @@ const addAllSongs = async (req, res) => {
     console.log("songsArr", req.body);
     try {
         Song.insertMany([...songsArr]);
-        res.status(201).send(inserted);
+        res.status(201).send("inserted");
         songsArr.save();
     } catch (error) {
         res.status(400).send({ message: error });
@@ -36,16 +37,15 @@ const addSong = async (req, res) => {
     const { title, songUrl, category } = req.body;
     const song = new Song({ title, songUrl, category });
     try {
-        await song.save();
         console.log(song)
         res.status(200).send(song);
+        await song.save();
     }
     catch (err) {
         res.status(400).send(err.message);
     }
 
 };
-
 
 module.exports = {
     addSong,
