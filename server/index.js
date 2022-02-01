@@ -1,9 +1,12 @@
 const express = require('express');
 const path = require("path");
 const cors = require("cors");
+// const cookieParser = require("cookie-parser");
 const songRouter = require("./routers/songRouter");
 require("./db/mongoose");
 require("./models/Song");
+
+require('dotenv').config();
 
 
 const port = process.env.PORT || 5000;
