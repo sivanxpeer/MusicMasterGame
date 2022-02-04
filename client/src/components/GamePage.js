@@ -6,37 +6,36 @@ const GamePage = () => {
     const [currentSong, setCurrentSong] = useState({});
     const [songs, setSongs] = useState({});
 
+
     const getSongs = async () => {
         try {
             const { data } = await songsApi.get("/songs");
             setSongs(data);
             setCurrentSong(data[0].songUrl);
+            console.log(currentSong)
         } catch (e) {
             console.log(e);
         }
     };
 
-    const nextSong = () => {
-        let index = songs.indexOf(currentSong);
-        // if (index >= songs.length - 1) {
-        //   setIsGameOver(true);
-        //   console.log("game over");
-        //   return;
-        // }
-        setCurrentSong(songs[++index]);
-      };
+    // const mappedSongs = async () => {}
+
+    // const nextSong = () => {};
+
+    let song = new Audio(currentSong);
 
     useEffect(() => {
         getSongs();
     }, []);
 
 
-    return <div>
-        {currentSong && (nextSong) &&(
-            <Song
-                songUrl={currentSong}>
-            </Song>
-        )}
+    return <div
+        data={songs}>
+        {songs &&
+            (<Song
+                songUrl={song}>
+                {song}
+            </Song>)}
     </div>;
 };
 
