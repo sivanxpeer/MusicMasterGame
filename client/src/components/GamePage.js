@@ -3,39 +3,66 @@ import Song from './Song';
 import songsApi from '../api/api';
 
 const GamePage = () => {
-    const [currentSong, setCurrentSong] = useState({});
+    const [currentSongUrl, setCurrentSongUrl] = useState({});
     const [songs, setSongs] = useState({});
+    const [index, setIndex] = useState(0);
 
 
     const getSongs = async () => {
         try {
             const { data } = await songsApi.get("/songs");
             setSongs(data);
-            setCurrentSong(data[0].songUrl);
-            console.log(currentSong)
+            setCurrentSongUrl(data[0].songUrl);
+            console.log(currentSongUrl)
+            setIndex(index+1);
         } catch (e) {
             console.log(e);
         }
     };
+    
+    const getSongsByCategory=()=>{
+        
+    }
+
+    const getRandom20=()=>{
+        
+    }
 
     // const mappedSongs = async () => {}
 
-    // const nextSong = () => {};
-
-    let song = new Audio(currentSong);
+    const nextSong = () => {
+        console.log(index)
+        if (!songs[index]) {
+            return (<div>
+                game over
+            </div>)
+        }
+        setIndex(index+1);
+        setCurrentSongUrl(songs[index].songUrl)
+        console.log(currentSongUrl,songs[index].songUrl)
+        // return new Audio(currentSongUrl);
+    };
+    
+    let song = new Audio(currentSongUrl);
 
     useEffect(() => {
         getSongs();
     }, []);
 
 
-    return <div
-        data={songs}>
+    return <div>
         {songs &&
             (<Song
+                songs={songs}
+                nextSong={nextSong}
+                index={index}
+                setIndex={setIndex}
                 songUrl={song}>
                 {song}
             </Song>)}
+            {/* <div> */}
+                {/* <button onClick={()=>nextSong()}>next song</button> */}
+            {/* </div> */}
     </div>;
 };
 

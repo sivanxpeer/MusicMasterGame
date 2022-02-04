@@ -1,27 +1,897 @@
 [
     {
-        "title":"Smells Like Teen Spirit",
-        "songUrl":"https://p.scdn.co/mp3-preview/2dc58f1244afdf8b321de45d25832449abce16cc?cid=a46f5c5745a14fbf826186da8da5ecc3",
-        "category":"90's Rock Anthems"
-    },
-    {
-        "title":"Basket Case",
-        "songUrl":"https://p.scdn.co/mp3-preview/a66864fcfd8923c6084fc2000e3086e4e1e0a657?cid=a46f5c5745a14fbf826186da8da5ecc3",
-        "category":"90's Rock Anthems"
-    },
-    {
-        "title":"Zombie",
-        "songUrl":" https://p.scdn.co/mp3-preview/2c4a33f87c7195fdc7e7627047cc8744933fc59a?cid=a46f5c5745a14fbf826186da8da5ecc3",
-        "category":"90's Rock Anthems"
-    },
-    {
-        "title":"היי בייב",
-        "songUrl":"https://p.scdn.co/mp3-preview/beea1fe51792cd0cce5ca9a2dab83682a85a17bc?cid=a46f5c5745a14fbf826186da8da5ecc3",
-        "category":"Israeli"
-    },
-    {
-        "title":"פילטרים יפים",
-        "songUrl":"https://p.scdn.co/mp3-preview/1ee4200115b4bf39f559bc81adcbb8f3a9c52c2b?cid=a46f5c5745a14fbf826186da8da5ecc3",
-        "category":"Israeli"
-    }
+        "songTitle": "לך לישון",
+        "songUrl": "https://p.scdn.co/mp3-preview/a186f083df50e1f26ccb79d06a6fd89b3bd5e550?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "אם הייתי צריכה",
+        "songUrl": "https://p.scdn.co/mp3-preview/a09edba50852c08911c1a9851799c4f441c9c71f?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Enemy (with JID) - from the series Arcane League of Legends",
+        "songUrl": "https://p.scdn.co/mp3-preview/bd0eaa32cd545406bc958e1a220fc36551e72cb0?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "באתי להציל אותך",
+        "songUrl": "https://p.scdn.co/mp3-preview/ed367e7eb620e2e6dcca0ee20d3234330a09588c?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "מים עמוקים",
+        "songUrl": "https://p.scdn.co/mp3-preview/9e8bcaf932b89a1cd9beba7252fe66ada1549d0f?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Thought About That",
+        "songUrl": "https://p.scdn.co/mp3-preview/1aa7a7c13caa68e8d53c549989b6bff3cd0eb265?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "היי בייב",
+        "songUrl": "https://p.scdn.co/mp3-preview/beea1fe51792cd0cce5ca9a2dab83682a85a17bc?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "יחפים",
+        "songUrl": "https://p.scdn.co/mp3-preview/b2aed5593debf06041fb7784a662d421343714fb?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "love nwantiti (ah ah ah)",
+        "songUrl": "https://p.scdn.co/mp3-preview/a04d7225d1bce725dc9ee38e8fed32b56368d562?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "abcdefu",
+        "songUrl": "https://p.scdn.co/mp3-preview/25a618c8bbf72ac750ab2024c8b987820ecc1cd1?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "מה קרה",
+        "songUrl": "https://p.scdn.co/mp3-preview/170b0ad0cc5b9a729035248bb6468745719f20ee?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Infinity",
+        "songUrl": "https://p.scdn.co/mp3-preview/b211de9cfac2db9710411267df6eb6144404fd15?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "מה פספסתי",
+        "songUrl": "https://p.scdn.co/mp3-preview/6e4abc3c611788cc63b3a1e3ebcb6cea4dcc0ee4?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "חורף באוטו",
+        "songUrl": "https://p.scdn.co/mp3-preview/9c4a6a9baabdcb3cc7ce7f62c37b042d8d7376a4?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "הולכת איתך",
+        "songUrl": "https://p.scdn.co/mp3-preview/1a74d01c63632564a580635a50116c4ffb4433f7?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Sacrifice",
+        "songUrl": "https://p.scdn.co/mp3-preview/4892940fb0fed9666392fad90945837fe769994f?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "רעשים",
+        "songUrl": "https://p.scdn.co/mp3-preview/77c820d3083ba5d55b733306f6d0992a2240a8a8?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Pepas",
+        "songUrl": "https://p.scdn.co/mp3-preview/890f6034cf93d666d0f89d5724430c6ddd276eb2?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "לא להיות לבד",
+        "songUrl": "https://p.scdn.co/mp3-preview/18d9a271518721c7525fc021ba6edc4ec093bae4?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "השמלה החדשה שלי",
+        "songUrl": "https://p.scdn.co/mp3-preview/25f2d9e952c4dd48168cb6085186fd0330fcc10c?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "חוץ ממך",
+        "songUrl": "https://p.scdn.co/mp3-preview/5557db1adb2f36b7767f2824750f04ba06906093?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Shivers",
+        "songUrl": "https://p.scdn.co/mp3-preview/bb9f413d6876e265d09a5d2d93345c64f8ac4de8?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "פילטרים יפים",
+        "songUrl": "https://p.scdn.co/mp3-preview/1ee4200115b4bf39f559bc81adcbb8f3a9c52c2b?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Woman",
+        "songUrl": "https://p.scdn.co/mp3-preview/5f583b2ce5aff7762b6611a85907d55349a62db1?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "STAY (with Justin Bieber)",
+        "songUrl": "https://p.scdn.co/mp3-preview/dd4d8d66b97b6edcb5358135e72620715e1449f9?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Cold Heart - PNAU Remix",
+        "songUrl": "https://p.scdn.co/mp3-preview/7c35460359462f3d40093fa8df5a7181c7c3c95d?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "אני כבר לא בך",
+        "songUrl": "https://p.scdn.co/mp3-preview/d0f7c25c34aed8205917b6a5cabb226c2cc16003?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "לא מרגיש טוב",
+        "songUrl": "https://p.scdn.co/mp3-preview/4669b13c8ab749ef0f259fca2e6f61bc93dd70c8?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "אין מאושר ממני",
+        "songUrl": "https://p.scdn.co/mp3-preview/7e7913a7b438266f64c91ea0ebeeec3f99790712?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Easy On Me",
+        "songUrl": "https://p.scdn.co/mp3-preview/c5014be1aeb2ab5f129e2789eff3ea87ecd5027f?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "חצי דפוק",
+        "songUrl": "https://p.scdn.co/mp3-preview/87335e12b08f841ce06b6e7f14d9b982df36645d?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Moth To A Flame (with The Weeknd)",
+        "songUrl": "https://p.scdn.co/mp3-preview/18dc3642cc0585b5adf12984cf614018763fce77?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Do It To It",
+        "songUrl": "https://p.scdn.co/mp3-preview/87dc5888bb43546549d3443c7ed1f045bf73495d?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "מקום",
+        "songUrl": "https://p.scdn.co/mp3-preview/2f28ffbb7e5116505290e031f301c6710704ea45?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Light Switch",
+        "songUrl": "https://p.scdn.co/mp3-preview/95a1c576b938bd5c9a091654328fe2c66d6abd77?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "THATS WHAT I WANT",
+        "songUrl": "https://p.scdn.co/mp3-preview/ff78ca00587c088f5ebf5b300c856fe0459254b9?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "The Motto",
+        "songUrl": "https://p.scdn.co/mp3-preview/77c4f335a4735b24684375b9dcc18533bd5a2b2f?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "מקום לשנינו – A place for both of us",
+        "songUrl": "https://p.scdn.co/mp3-preview/bb36fa5ba03cfd0949bd9ba83c26bb5d20680c73?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle":" סוף של כל סיפור",
+        "songUrl": "https://p.scdn.co/mp3-preview/c192442cd7c66f7cf220fb254424829c574731d6?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "ורוד מבריק",
+        "songUrl": "https://p.scdn.co/mp3-preview/79ea2f3e45e4c0dc05ae950800faf212cbc66285?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle":"My Universe",
+        "songUrl": "https://p.scdn.co/mp3-preview/73bbc165dc2883cc59a0c8b46700af11eba03bc7?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Heat Waves",
+        "songUrl": "https://p.scdn.co/mp3-preview/807fbead013f8f87d805b26224304c79d7f19091?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "One Right Now (with The Weeknd)",
+        "songUrl": "https://p.scdn.co/mp3-preview/92afa92d49b2032b9ac7834475c30e788a292bab?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Can I Get It",
+        "songUrl": "https://p.scdn.co/mp3-preview/fcbda57102f62fbab2f827dd4719e038ddfd3e61?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "דובשנייה",
+        "songUrl": "https://p.scdn.co/mp3-preview/fc1201c13c939709d544d6a501e55f7484299376?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Toxic",
+        "songUrl": "https://p.scdn.co/mp3-preview/59227840e672ae4b6a1624685789d15b39c93963?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Smokin Out The Window",
+        "songUrl": "https://p.scdn.co/mp3-preview/5c0216fcadf85b6dd7653bada342ead1f0881db8?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "מגבת באוויר",
+        "songUrl": "https://p.scdn.co/mp3-preview/76f34f7dd335df3a1bb032ca06a0810d5df46744?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Bad Habits",
+        "songUrl": "https://p.scdn.co/mp3-preview/e0440ae1a5a38687fb54170742e9b83ebd33ddf3?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Israli Hits"
+      },
+      {
+        "songTitle": "Smells Like Teen Spirit",
+        "songUrl": "https://p.scdn.co/mp3-preview/2dc58f1244afdf8b321de45d25832449abce16cc?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Basket Case",
+        "songUrl": "https://p.scdn.co/mp3-preview/a66864fcfd8923c6084fc2000e3086e4e1e0a657?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Zombie",
+        "songUrl": "https://p.scdn.co/mp3-preview/2c4a33f87c7195fdc7e7627047cc8744933fc59a?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Creep",
+        "songUrl": "https://p.scdn.co/mp3-preview/c82f6b69411ca73eba8f401621d8ead3c4dfa9da?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Self Esteem",
+        "songUrl": "https://p.scdn.co/mp3-preview/bd96698c0e5b80265da694e52293c0d6b67593c1?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Killing In The Name",
+        "songUrl": "https://p.scdn.co/mp3-preview/af0c42e6dacc0b8bb43c269ea2075c3de3ee2c7a?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Scar Tissue",
+        "songUrl": "https://p.scdn.co/mp3-preview/8602533a3ae6da937635c5fd8ae270d53ad291dc?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Wonderwall - Remastered",
+        "songUrl": "https://p.scdn.co/mp3-preview/d012e536916c927bd6c8ced0dae75ee3b7715983?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Everlong",
+        "songUrl": "https://p.scdn.co/mp3-preview/7258a9fd5a751e9bdb7030b0da623b3b498b6ba0?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Drive",
+        "songUrl": "https://p.scdn.co/mp3-preview/529519c74312d9a940114264e608f8cbf779628a?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Knockin' On Heaven's Door",
+        "songUrl": "https://p.scdn.co/mp3-preview/004305940689ddb417f7c34e879c9cc5ede45615?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Enter Sandman",
+        "songUrl": "https://p.scdn.co/mp3-preview/6993c456b1c3c9dddca474c34da013e2a264b8be?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "When I Come Around",
+        "songUrl": "https://p.scdn.co/mp3-preview/d31a72f5f5a6fee7c92a32bed95ee4e13ce16dde?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Losing My Religion",
+        "songUrl": "https://p.scdn.co/mp3-preview/ea84794d28445beca6ae2be333a6a4eeb258e245?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Bitter Sweet Symphony",
+        "songUrl": "https://p.scdn.co/mp3-preview/aef188441bf3447bf2d6144421ce323cb9e71dfa?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Plush",
+        "songUrl": "https://p.scdn.co/mp3-preview/8ddd877c5be9d5d3d8e8cb6c4a1792ca6513e4df?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Come Out and Play",
+        "songUrl": "https://p.scdn.co/mp3-preview/cf0e2d13f59112abd3e63ada100939c95e526c6a?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Under the Bridge",
+        "songUrl": "https://p.scdn.co/mp3-preview/90e41778392f27b6f7dd82db4c90916b3727aa6a?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "All The Small Things",
+        "songUrl": "https://p.scdn.co/mp3-preview/909d312e596dbb3cd53ac8d1daf51e825566029d?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Even Flow",
+        "songUrl": "https://p.scdn.co/mp3-preview/c3ea42310a641fd8febd51dc93c06f8f0876dfea?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Shine",
+        "songUrl": "https://p.scdn.co/mp3-preview/b369dd4c7aa29d4ad9a2bf03b1d11ac4b7666933?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Don't Speak",
+        "songUrl": "https://p.scdn.co/mp3-preview/2a984006076bc738dd30b140a7ddda5cc01bfbdd?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "You Oughta Know",
+        "songUrl": "https://p.scdn.co/mp3-preview/02c878f0d34bbcc4bf6a41236b6db697e52df11e?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Learn to Fly",
+        "songUrl": "https://p.scdn.co/mp3-preview/a03a546e8dfee4c84098a52d3c3f2b4ca524ae59?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Come As You Are",
+        "songUrl": "https://p.scdn.co/mp3-preview/a71fd1115adc7c35bf1d2a7be04bababd89c53fd?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Nothing Else Matters",
+        "songUrl": "https://p.scdn.co/mp3-preview/d6e626f0c7bdf60ce42fff46bc4550596a5fb487?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Santeria",
+        "songUrl": "https://p.scdn.co/mp3-preview/ca755dac7180acf5ee73d7c2c73b85071948a932?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Loser",
+        "songUrl": "https://p.scdn.co/mp3-preview/913166141b8fa4a2593c60edb8becb24823fe381?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Give It Away",
+        "songUrl": "https://p.scdn.co/mp3-preview/fcdf3224d230b26b637418c2d1028bc482db7fce?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Semi-Charmed Life",
+        "songUrl": "https://p.scdn.co/mp3-preview/4fd88f2082b5d4ad83e6ef0a55376301d0d70b9d?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Are You Gonna Go My Way",
+        "songUrl": "https://p.scdn.co/mp3-preview/ff5c787309e667cb1c4c6bb5fb58329fd22dce08?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "The Kids Aren't Alright",
+        "songUrl": "https://p.scdn.co/mp3-preview/74fd14ff0029da616e14376e853697dc10079783?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Heart-Shaped Box",
+        "songUrl": "https://p.scdn.co/mp3-preview/72b22eeda1014182e399a6486786bb66e6a8c11f?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Alive",
+        "songUrl": "https://p.scdn.co/mp3-preview/628f678adab15d9b2b8a144e4bdffd5b2c493436?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Black Hole Sun",
+        "songUrl": "https://p.scdn.co/mp3-preview/814e3edbfe3731b50c34265a1aafc99590f32ffb?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "High and Dry",
+        "songUrl": "https://p.scdn.co/mp3-preview/74390a54d38cd1204edb0a6cde829b591782cc0c?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "What's Up?",
+        "songUrl": "https://p.scdn.co/mp3-preview/170ad00f93969d747c8409f6c044e6a080d9e126?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Sweet Dreams (Are Made Of This)",
+        "songUrl": "https://p.scdn.co/mp3-preview/e3f995a243ac0de2814ef7e63c5323fc26a79132?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Mr. Jones",
+        "songUrl": "https://p.scdn.co/mp3-preview/61da6033572b55220571bf1d75254094ec5ea65d?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "My Hero",
+        "songUrl": "https://p.scdn.co/mp3-preview/feef6a4a188b7753d02776c154f8a7aadd8e02b0?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Just A Girl",
+        "songUrl": "https://p.scdn.co/mp3-preview/e42eda8fe361f4951ae69bbe80289c3faf458b38?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Man in the Box",
+        "songUrl": "https://p.scdn.co/mp3-preview/5dfc25b31b13ac71b1d6d823711c08e02027b090?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Bullet With Butterfly Wings",
+        "songUrl": "https://p.scdn.co/mp3-preview/e6e5797e7a30ed99a06873717bd5856c60e369ad?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Sabotage",
+        "songUrl": "https://p.scdn.co/mp3-preview/aa8940464fee4e7f40204618fceb0760f937d1d3?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Cryin'",
+        "songUrl": "https://p.scdn.co/mp3-preview/cfbd9a35d18d5d1192f25c5b7ccafb520375121b?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "No Rain",
+        "songUrl": "https://p.scdn.co/mp3-preview/36adeb851bf8cfbeefabc9334af8c5b50ca3974c?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Two Princes",
+        "songUrl": "https://p.scdn.co/mp3-preview/88531d1cfdbcea42686efb7ea5dcf8c5ae797260?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Don't Look Back in Anger",
+        "songUrl": "https://p.scdn.co/mp3-preview/5b82274e20e152fa933b2ce8db18aa5120e0bd1a?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "What's My Age Again?",
+        "songUrl": "https://p.scdn.co/mp3-preview/806fd7bfcb50a3657c7ade06057fdaf333832f84?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Say It Ain't So",
+        "songUrl": "https://p.scdn.co/mp3-preview/d80b84c7c4c0ef742ce26e900c5baac6d2a72041?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "All Star",
+        "songUrl": "https://p.scdn.co/mp3-preview/24a26524cd1e364126bb9680ae4b2d3792946cd6?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Interstate Love Song",
+        "songUrl": "https://p.scdn.co/mp3-preview/5de46b572729acb5872540a822de1d6250f47120?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Machinehead" ,
+        "songUrl": "https://p.scdn.co/mp3-preview/7b2cef5b863f0491f6fb3229d867a8c8fca5b023?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "What I Got",
+        "songUrl": "https://p.scdn.co/mp3-preview/70b810a58a034e63503da280e729ba8da3b77f7c?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle":" Good Riddance (Time of Your Life)",
+        "songUrl": "https://p.scdn.co/mp3-preview/e12bf548d4633c9877b3772493bf9a980511b926?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Wind Of Change",
+        "songUrl": "https://p.scdn.co/mp3-preview/e27415672375b3bac26447aa61eea6b11733bdfc?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Friday I'm In Love",
+        "songUrl": "https://p.scdn.co/mp3-preview/7d4c8ad4ca78b25ebfdcb3588c09ce69598cbfcd?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "My Own Worst Enemy",
+        "songUrl": "https://p.scdn.co/mp3-preview/7fb0d4f9660107c10364d4d1889953550fe8079e?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "November Rain",
+        "songUrl": "https://p.scdn.co/mp3-preview/86bd9e53c656d8fad82d7e442a3ef3af28781c9c?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Closer",
+        "songUrl": "https://p.scdn.co/mp3-preview/5df5367a419f290ea93be5b29cef51631da621e9?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Personal Jesus",
+        "songUrl": "https://p.scdn.co/mp3-preview/7d4f90ac9c743b0a5bc871e9dcba1ebf660c5ad6?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Celebrity Skin",
+        "songUrl": "https://p.scdn.co/mp3-preview/60ca88d8bca095cfa2faa4e9e7dcb45c58de728c?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Lightning Crashes",
+        "songUrl": "https://p.scdn.co/mp3-preview/e0a183213616b20bf46085d638ff89a204c59662?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Santa Monica",
+        "songUrl": "https://p.scdn.co/mp3-preview/069209df58d2bcaf46e2ebd165af75dd7b1db353?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Live And Let Die",
+        "songUrl": "https://p.scdn.co/mp3-preview/11a238e2beca0c59ceac314c575f6f4344ff7fda?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Far Behind",
+        "songUrl": "https://p.scdn.co/mp3-preview/9419d8f5aee62ea52f57521f51e45f4ab9edb343?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Flagpole Sitta",
+        "songUrl": "https://p.scdn.co/mp3-preview/8adae67ae646fc5fb2a4ea068488b97316dc1a51?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Epic",
+        "songUrl": "https://p.scdn.co/mp3-preview/990d2a036460850226e2058f1dc9ad063e13dc61?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Hard To Handle",
+        "songUrl": "https://p.scdn.co/mp3-preview/e63371f5e96019ae8e91714c9da6972950709320?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Today - 2011 Remaster",
+        "songUrl": "https://p.scdn.co/mp3-preview/5223779bee478f7d776cd887ddd5427887e2e54a?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Lump",
+        "songUrl": "https://p.scdn.co/mp3-preview/cb6f8fbd78f1b0dfd058bb33f21cae029c93a402?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Bulls On Parade",
+        "songUrl": "https://p.scdn.co/mp3-preview/9a0a212b91ae9561473158a58852f10d91a32440?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Karma Police",
+        "songUrl": "https://p.scdn.co/mp3-preview/2079205a3d8a4d87d504512c5b4019a6a2d29761?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Everything About You",
+        "songUrl": "https://p.scdn.co/mp3-preview/7f4e610b40c99f2c3f07e5fe3b72dbf23855d21d?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "The Distance",
+        "songUrl": "https://p.scdn.co/mp3-preview/9148593231f56039c57d29165542a2932643d90e?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "One",
+        "songUrl": "https://p.scdn.co/mp3-preview/2176368e261a56fc352a4e9e39536419e0bbcfa5?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Shimmer",
+        "songUrl": "https://p.scdn.co/mp3-preview/6f065f516cbc0ccf3e91e59f5fc597c32f40c944?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle":"Every You Every Me",
+        "songUrl": "https://p.scdn.co/mp3-preview/a281fc491f2249d525284d1762566e27f94ae169?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Tomorrow",
+        "songUrl": "https://p.scdn.co/mp3-preview/ae334eda7afb258681a4e937c05f17239457bce9?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Cumbersome",
+        "songUrl": "https://p.scdn.co/mp3-preview/fe416887ef6805b6dacddb251fdf99ba33876153?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Stupid Girl",
+        "songUrl": "https://p.scdn.co/mp3-preview/ca66d4838ac897679497a6c9c0bf06992c2714d0?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Pardon Me",
+        "songUrl": "https://p.scdn.co/mp3-preview/06ffa3b637583b18e483260b7231081253efc4db?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "The Impression That I Get",
+        "songUrl": "https://p.scdn.co/mp3-preview/1bf1841cb43bfeee014f295306bd8e1034fff9be?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Would?",
+        "songUrl": "https://p.scdn.co/mp3-preview/1a21c213ead8446fe9053ddc70dd4c66e5204562?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Guerrilla Radio",
+        "songUrl": "https://p.scdn.co/mp3-preview/47af10b767feae2666501d56ea4dcce187f9aa7b?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Supersonic",
+        "songUrl": "https://p.scdn.co/mp3-preview/b1e21790d76ed2e06440ad7c544375ede5ab8d8b?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Hunger Strike",
+        "songUrl": "https://p.scdn.co/mp3-preview/f74a05941b4bc109b83eed00c25e167839f59165?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Take A Picture",
+        "songUrl": "https://p.scdn.co/mp3-preview/68b1e4a8ae0f0b9ba36b25741aa214b09cab3c64?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Cannonball",
+        "songUrl": "https://p.scdn.co/mp3-preview/1c46be4dea0ad150920e90f0cee23b6858ca62d6?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Hedonism (Just Because You Feel Good)",
+        "songUrl": "https://p.scdn.co/mp3-preview/c0f87df7bc65638c5c1ad76abe38f36a126b1c3d?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Popular",
+        "songUrl": "https://p.scdn.co/mp3-preview/52af765a628f6418df302ed0fb5a24a68c89de2e?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Be Quiet and Drive (Far Away)",
+        "songUrl": "https://p.scdn.co/mp3-preview/687e79963e18ac99359515232f38dcce092a9518?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Country House",
+        "songUrl": "https://p.scdn.co/mp3-preview/15180508679197159d17008a406311ac2fd8bf9a?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "All Mixed Up",
+        "songUrl": "https://p.scdn.co/mp3-preview/3da3b31d9ab71660ea7bd2750baae6547876304f?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Milquetoast",
+        "songUrl": "https://p.scdn.co/mp3-preview/ec98de97a1f491ca031c160b118e7e96de1e9197?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Sunburn",
+        "songUrl": "https://p.scdn.co/mp3-preview/dc7bd2693228ea521083c25f1fc6910201f87561?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "If Only",
+        "songUrl": "https://p.scdn.co/mp3-preview/b4fb46a0a3e7433c63e46d73b22c6c440622617b?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Nowhere",
+        "songUrl": "https://p.scdn.co/mp3-preview/85d114dbdce21a0364675cada93f3cb6b5126ed5?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "90's Rock Anthems"
+      },
+      {
+        "songTitle": "Father Stretch My Hands Pt. 1",
+        "songUrl": "https://p.scdn.co/mp3-preview/6bbb07f460419bf5ddb74990ddbf61583f1b62e9?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Pt. 2",
+        "songUrl": "https://p.scdn.co/mp3-preview/a7b7afcc5b4431c529b04092e0c3d2720165f5d8?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Famous",
+        "songUrl": "https://p.scdn.co/mp3-preview/fb87602292db6f4daac5c9d77f64ae730f843f92?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Wash Us In The Blood",
+        "songUrl": "https://p.scdn.co/mp3-preview/bcc2e0144d8bdc09d18a9951836a96309651fc19?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Touch The Sky",
+        "songUrl": "https://p.scdn.co/mp3-preview/a243548653b7ed81dcb024be99c82a5d181245e1?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Hey Mama",
+        "songUrl": "https://p.scdn.co/mp3-preview/44296a6912645188f1ac9ef051e56cd3ebe3073b?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Heard 'Em Say",
+        "songUrl": "https://p.scdn.co/mp3-preview/29b21af82cb4c22f24034b9cdac06939a02ccbdf?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Jesus Walks",
+        "songUrl": "https://p.scdn.co/mp3-preview/96eaccd9c45656290287c1b56cb22839b9eb76df?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Gold Digger",
+        "songUrl": "https://p.scdn.co/mp3-preview/3693b9bd32b63f5c3987ee7ed9863c5144c26719?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "POWER",
+        "songUrl": "https://p.scdn.co/mp3-preview/9ad1166e2cdd2dc3bc4ff1b9abb4d33bc84af89f?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Good Life",
+        "songUrl": "https://p.scdn.co/mp3-preview/0a2ead76555a8e00937913aa6f129f21ce6e2441?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "All Falls Down",
+        "songUrl": "https://p.scdn.co/mp3-preview/5edebf2dff933cc5a8fb3af47eeb7c1030eda027?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Mercy",
+        "songUrl": "https://p.scdn.co/mp3-preview/dd22cbf36f46be45a141242b375e08b5163a25b3?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Can't Tell Me Nothing",
+        "songUrl": "https://p.scdn.co/mp3-preview/9479a6d7dfc99540c22fa40dff0c81baaa600f83?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Ni**as In Paris",
+        "songUrl": "https://p.scdn.co/mp3-preview/c7e04e09ee7acaf839299d05184d7caa00b81946?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Blood On The Leaves",
+        "songUrl": "https://p.scdn.co/mp3-preview/a756ab1425fe952d92a960d46eca8dfc59efd864?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "All Of The Lights",
+        "songUrl": "https://p.scdn.co/mp3-preview/027268461be981db140e4ac97177e8dc7f8884f5?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "The New Workout Plan",
+        "songUrl": "https://p.scdn.co/mp3-preview/214d2720de6a1d385537df426c5f023c2b338e69?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Stronger",
+        "songUrl": "https://p.scdn.co/mp3-preview/1e7f58c67c822f53b2a2e3bd508abd4286f19a35?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Through The Wire",
+        "songUrl": "https://p.scdn.co/mp3-preview/8bcdd59aa558ff10ec0a73e1241b59c87285e83e?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Clique",
+        "songUrl": "https://p.scdn.co/mp3-preview/88f45013af78f187856e0d58597fbb4838b2adca?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Yikes",
+        "songUrl": "https://p.scdn.co/mp3-preview/2f385f5fe2f12a630f0932f96fe5ae536a07547c?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Homecoming",
+        "songUrl": "https://p.scdn.co/mp3-preview/cfbb02b921d6eff48161fabc3f392594eb6d310b?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Love Lockdown",
+        "songUrl": "https://p.scdn.co/mp3-preview/a0ad027eb3adb653179df2db40c327f02caf537e?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Heartless",
+        "songUrl": "https://p.scdn.co/mp3-preview/80c2898cc15b0f8983d0763b4f68fece6aa151b2?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "See You In My Nightmares",
+        "songUrl": "https://p.scdn.co/mp3-preview/28184d86bb7a973400793aed7f74578b8da87cba?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Flashing Lights",
+        "songUrl": "https://p.scdn.co/mp3-preview/9ae0ad0278c48e41e5e3efa6ebb3bd61f6add244?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "All Mine",
+        "songUrl": "https://p.scdn.co/mp3-preview/5141c77e5126c63a6d8b416e3d8b91fbe9707249?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle":"Runaway",
+        "songUrl": "https://p.scdn.co/mp3-preview/3b9daa4ad7b5d0b59cd84858823fec284bf16413?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Slow Jamz",
+        "songUrl": "https://p.scdn.co/mp3-preview/2310554196d0908dea2f6a122fbcc2048c36a35a?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "I Love It (& Lil Pump)",
+        "songUrl": "https://p.scdn.co/mp3-preview/28e6929f528ba2f5227fb8f1f933f6b816919aca?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      },
+      {
+        "songTitle": "Bound 2",
+        "songUrl": "https://p.scdn.co/mp3-preview/54a5036392d0b1ecdd6186db8ab513a87c844a15?cid=a46f5c5745a14fbf826186da8da5ecc3",
+        "category": "Kanye"
+      }
 ]

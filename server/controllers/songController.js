@@ -23,11 +23,11 @@ const getSong = async (req, res) => {
 
 const addAllSongs = async (req, res) => {
     const songsArr = req.body;
-    console.log("songsArr", req.body);
+    // console.log("songsArr", req.body);
     try {
         Song.insertMany([...songsArr]);
+        await songsArr.save();
         res.status(201).send("inserted");
-        songsArr.save();
     } catch (error) {
         res.status(400).send({ message: error });
     }
