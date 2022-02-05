@@ -20,9 +20,9 @@ const [isPlaying,setisPlaying]=useState(true);
 
     // }
     return <div>
-        <div song={songUrl} className="songContainer">
-            <button onClick={handleClick}>play/pause</button>
-            <button onClick={nextSong}>next song</button>
+        <div song={songUrl} className="song-container">
+            <button onClick={handleClick} className="btn">Play / Pause</button>
+            <button onClick={nextSong} className="btn">Next Song</button>
         </div>
     </div>;
 };
