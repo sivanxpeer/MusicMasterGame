@@ -103,8 +103,10 @@
 .nav-icon {
   display: none;
 }
-
-@media (max-width: 500px) {
+.last-link{
+  /* padding:4%; */
+}
+@media (max-width: 854px) {
   .nav-menu {
     /* height: 200px; */
     /* display:flex; */
@@ -113,6 +115,7 @@
     align-content: center;
     /* margin:  200px 0 0; */
     font-size: 1.3rem;
+    margin-top: 10px;
   }
 
   .nav-container {

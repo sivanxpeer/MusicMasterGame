@@ -33,7 +33,7 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink exact to="/logout" className="nav-links" activeClassName='active'>
+            <NavLink exact to="/logout" className="nav-links last-link" activeClassName='active'>
               Log Out
             </NavLink>
           </li>
