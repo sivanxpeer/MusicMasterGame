@@ -12,11 +12,11 @@ const NavBar = () => {
   return <>
     <nav className="navbar">
       <div className="nav-container">
-        <NavLink exact to="/" className="nav-logo" activeClassName='active'>
+        {/* <NavLink exact to="/" className="nav-logo" activeClassName='active'>
           Music
           <i className="fas fa-music"></i>
-        </NavLink>
-        <ul className={clicked ? "nav-menu active" : "nav-menu"}>
+        </NavLink> */}
+        <ul className="nav-menu">
           <li className="nav-item">
             <NavLink exact to="/" className="nav-links" activeClassName='active'>
               Home
@@ -39,7 +39,7 @@ const NavBar = () => {
           </li>
         </ul>
         <button className="nav-icon" onClick={handleClick}>
-          <i className={clicked===true || "fas fa-times" && "fas fa-bars"}></i>
+          <i className={clicked? "fas fa-times" : "fas fa-bars"}></i>
         </button>
 
       </div>

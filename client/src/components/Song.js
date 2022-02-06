@@ -20,7 +20,7 @@ const [isPlaying,setisPlaying]=useState(true);
 
     // }
     return <div>
-        <div song={songUrl} className="song-container">
+        <div song={songUrl} className="btns-container">
             <button onClick={handleClick} className="btn">Play / Pause</button>
             <button onClick={nextSong} className="btn">Next Song</button>
         </div>

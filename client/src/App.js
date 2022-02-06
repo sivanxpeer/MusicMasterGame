@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import GamePage from './components/GamePage';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Pages/Home';
 import Leaders from './components/Pages/Leaders';
@@ -22,7 +21,6 @@ function App() {
           </Switch>
         </div>
       </Router>
-      <GamePage></GamePage>
     </div>
   );
 }
