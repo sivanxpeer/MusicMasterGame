@@ -1,9 +1,8 @@
 const userRouter = require("express").Router();
 const { User, validate } = require("../models/User");
-const bcrypt = require("bcypy");
+const bcrypt = require("bcrypt");
 
 userRouter.post("/", async (req, res) => {
-
     try {
         const { error } = validate(req.body);
         if (error) {
@@ -25,3 +24,5 @@ userRouter.post("/", async (req, res) => {
     }
 
 })
+
+module.exports =userRouter;

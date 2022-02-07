@@ -7,11 +7,15 @@ import Home from './components/Pages/Home';
 import Leaders from './components/Pages/Leaders';
 import Play from './components/Pages/Play';
 import Category from './components/Pages/Category';
+import SignUp from './components/SignUp';
+import Login from './components/login/Login';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <SignUp></SignUp>
+        <Login></Login>
         <NavBar />
         <div className="pages">
           <Switch>
