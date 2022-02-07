@@ -1,11 +1,5 @@
 :root {
   --gradient: linear-gradient(to right, #e237c6 0%, #a044ff 59%, #8641b8 100%);
-  /* --background: #909E84;
-    --btn-color: #E3D477;
-    --headings-color:#E8B38C;
-    --dark:#75654C;
-    --light:#BB8644; */
-
   --background: #eee2dc;
   --btn-color: #edc7b7;
   --btn-text-color: #ac3b61;
@@ -24,13 +18,9 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   background: url("../public/bg4.jpg") no-repeat center center/cover;
-  /* font-family: "Roboto", sans-serif; */
-  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  /* font-family: 'Titillium Web', sans-serif; */
   font-family: 'Baloo Bhaijaan 2', cursive;
-  color: #ced4da;
 }
 
 h1 {
@@ -41,6 +31,7 @@ h1 {
 }
 
 .pages {
+  height:100%;
   text-align: center;
   color: #ced4da;
   font-size: 3.5rem;
@@ -53,6 +44,7 @@ h1 {
   justify-content: center;
   margin: auto;
 }
+
 
 .btn {
   background-color: var(--btn-color);
@@ -81,21 +73,31 @@ h1 {
   cursor: pointer;
 }
 
-.App {
-}
+
 
 @media (max-width: 500px) {
   h1 {
     margin: 200px 0 0 0;
     align-items: center;
   }
+  .btns-container{
+    margin-top: 0;
+    flex-direction: column;
+  }
   .btn {
     font-weight: bold;
   }
+  .cat{
+    margin-top: 10rem;
+  }
+  
 }
 
 @media (max-width: 414px) {
   .btns-container {
     margin-top: 1.7rem;
+  }
+  .cat{
+    margin-top: 20rem;
   }
 }

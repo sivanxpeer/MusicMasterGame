@@ -5,7 +5,8 @@ const cors = require("cors");
 const songRouter = require("./routers/songRouter");
 require("./db/mongoose");
 require("./models/Song");
-
+const userRouter = require("./routers/userRouter");
+const authRouter = require("./routers/authRouter");
 require('dotenv').config();
 
 
@@ -21,6 +22,8 @@ app.use(cors());
 app.use("/", songRouter);
 app.use(express.static(publicPath));
 
+app.use("/api/users",userRouter);
+app.use("/api/auth",authRouter);
 // app.get("/", (req, res) => { res.send("hello") })
 
 

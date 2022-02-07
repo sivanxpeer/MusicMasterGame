@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar';
 import Home from './components/Pages/Home';
 import Leaders from './components/Pages/Leaders';
 import Play from './components/Pages/Play';
+import Category from './components/Pages/Category';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <div className="pages">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/leaders" component={Leaders} />
+            <Route exact path="/leaders" component={Leaders}/>
             <Route exact path="/play" component={Play} />
+            <Route exact path="/categories" component={Category}/>
             {/* <Route exact path="/" component={Home} /> */}
           </Switch>
         </div>

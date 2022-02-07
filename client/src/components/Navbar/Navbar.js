@@ -27,7 +27,12 @@ const NavBar = () => {
               Play
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item disp">
+            <NavLink exact to="/categories" className="nav-links categories" activeClassName='active'>
+              Categories
+            </NavLink>
+          </li>
+          <li className="nav-item disp" >
             <NavLink exact to="/leaders" className="nav-links" activeClassName='active'>
               Leaders
             </NavLink>
