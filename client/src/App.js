@@ -2,17 +2,17 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-// import NavBar from './components/NavBar/NavBar';
 import Home from './components/Pages/Home';
 import Leaders from './components/Pages/Leaders';
 import Play from './components/Pages/Play';
 import Category from './components/Pages/Category';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* <NavBar></NavBar> */}
+        <NavBar></NavBar>
         <div className="pages">
           <Switch>
               {/* <Link to="/register" component={Register} />  */}
