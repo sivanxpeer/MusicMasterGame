@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import usersApi from '../../api/usersApi';
 import './Login.css';
 
@@ -30,9 +30,9 @@ const Login = () => {
 
   }
 
-  const goToPage = () => {
+  // const goToPage = () => {
 
-  }
+  // }
   return <div>
     <div>
       <div>

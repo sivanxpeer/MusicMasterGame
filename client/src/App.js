@@ -1,13 +1,12 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Pages/Home';
 import Leaders from './components/Pages/Leaders';
 import Play from './components/Pages/Play';
 import Category from './components/Pages/Category';
-import Register from './components/Register';
 
 function App() {
   return (
