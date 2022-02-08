@@ -1,13 +1,21 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
-// import Login from "../login/Login";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Login from "../login/Login";
+import SignUp from "../SignUp";
 import Register from "../Register";
 
 const Home = () => {
   return <div>
     <h1>MUSIC MASTER</h1>
-    <Register></Register>
-    <button className="btn">
+    <Register>
+    </Register>
+    <Router>
+      <Switch>
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={SignUp} />
+      </Switch>
+    </Router>
+    {/* <button className="btn">
       <NavLink exact to="/login" className="nav-links" activeClassName='active'>
         login
       </NavLink>
@@ -16,7 +24,7 @@ const Home = () => {
       <NavLink exact to="/signup" className="nav-links" activeClassName='active'>
         signup
       </NavLink>
-    </button>
+    </button> */}
 
 
   </div>;

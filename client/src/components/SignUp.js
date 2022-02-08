@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink,Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link, NavLink, Switch } from 'react-router-dom';
 import usersApi from '../api/usersApi';
 import "../components/login/Login";
 
@@ -36,11 +36,15 @@ const SignUp = () => {
         <div >
             <div>
                 <h1>Welcome back!</h1>
-                {/* <Switch> */}
-                <Link to="/login">
-                    <button className="btn">Log in</button>
-                </Link>
-                {/* </Switch> */}
+                <Switch>
+                <Router>
+                    <Switch>
+                        <Link to="/login">
+                            <button className="btn">Log in</button>
+                        </Link>
+                    </Switch>
+                </Router>
+                </Switch>
             </div>
             <div>
                 <form className="form-container" onSubmit={handleSubmit}>
@@ -81,7 +85,7 @@ const SignUp = () => {
                         required
                         className="form-input"
                     ></input>
-                        {error&&<div className="error-display">{error}</div>}
+                    {error && <div className="error-display">{error}</div>}
                     <button type="submit" className="submit btn">Sign Up</button>
                 </form>
             </div>

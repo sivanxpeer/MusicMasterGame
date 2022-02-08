@@ -63,6 +63,7 @@ h1 {
   border: none;
   display: block;
   box-shadow: 0px 0px 5px 0px rgba(172,59,97,0.5);
+  /* text-decoration: none; */
 }
 
 .btn:hover {

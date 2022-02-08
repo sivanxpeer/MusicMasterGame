@@ -1,18 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch,Route } from 'react-router-dom';
-import Login from './login/Login';
-import SignUp from './SignUp';
+import { NavLink } from 'react-router-dom';
 
 const Register = () => {
     return <div className="register">
-        <Router>
-            <Switch>
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/signup" component={SignUp} />
-            </Switch>
-
-        </Router>
-        <SignUp></SignUp>
+        <NavLink exact to="/login">
+            <button className="btn">Login</button>
+        </NavLink>
+        <NavLink exact to="/signup">
+            <button className="btn">Sign Up</button>
+        </NavLink>
     </div>;
 };
 
