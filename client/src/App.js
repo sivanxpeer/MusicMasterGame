@@ -6,13 +6,13 @@ import Home from './components/Pages/Home';
 import Leaders from './components/Pages/Leaders';
 import Play from './components/Pages/Play';
 import Category from './components/Pages/Category';
-// import Navbar from './components/NavBar/Navbar';
+import Navbar from './components/navbar1/NavBar';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Navbar></Navbar> */}
+        <Navbar></Navbar>
         <div className="pages">
           <Switch>
               {/* <Link to="/register" component={Register} />  */}
