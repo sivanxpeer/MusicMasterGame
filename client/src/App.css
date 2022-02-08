@@ -73,7 +73,10 @@ h1 {
   cursor: pointer;
 }
 
-
+.register{
+  display: flex;
+  justify-content:center;
+}
 
 @media (max-width: 500px) {
   h1 {

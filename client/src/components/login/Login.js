@@ -30,15 +30,20 @@ const Login = () => {
 
   }
 
+  const goToPage = () => {
 
+  }
   return <div>
     <div>
       <div>
         <h2>New Here?</h2>
         {/* <Switch> */}
-        <Link to="/signup">
+        <NavLink exact to="/signup" className="nav-links" activeClassName='active'>
+          SignUp
+        </NavLink>
+        {/* <Link to="/signup">
           <button className="btn">sign up</button>
-        </Link>
+        </Link> */}
       </div>
       <div>
         <form className="form-container" onSubmit={handleSubmit}>

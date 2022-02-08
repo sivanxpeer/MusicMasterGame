@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink,Route } from 'react-router-dom';
 import usersApi from '../api/usersApi';
+import "../components/login/Login";
 
 const SignUp = () => {
     const [error, setError] = useState("");
@@ -39,7 +40,6 @@ const SignUp = () => {
                 <Link to="/login">
                     <button className="btn">Log in</button>
                 </Link>
-
                 {/* </Switch> */}
             </div>
             <div>
