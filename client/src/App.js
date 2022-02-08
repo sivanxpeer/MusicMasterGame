@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar/>
+        <NavBar></NavBar>
         <div className="pages">
           <Switch>
               {/* <Link to="/register" component={Register} />  */}
