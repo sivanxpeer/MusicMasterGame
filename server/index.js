@@ -22,8 +22,10 @@ app.use(cors());
 app.use("/", songRouter);
 app.use(express.static(publicPath));
 
-app.use("/api/users",userRouter);
-app.use("/api/auth",authRouter);
+// app.use("/api/users",userRouter);
+// app.use("/api/auth",authRouter);
+
+
 // app.get("/", (req, res) => { res.send("hello") })
 
 
