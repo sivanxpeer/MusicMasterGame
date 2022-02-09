@@ -23,7 +23,7 @@ app.use(express.static(publicPath));
 
 
 
-// app.use("/", songRouter);
+app.use("/", songRouter);
 app.use("/", userRouter);
 
 // app.use("/api/users",userRouter);
