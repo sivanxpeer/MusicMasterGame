@@ -30,7 +30,7 @@ app.use("/", userRouter);
 // app.use("/api/auth",authRouter);
 
 
-app.get("/", (req, res) => {console.log("getiing") })
+// app.get("/", (req, res) => {console.log("getiing") })
 
 
 app.get("/*", (req, res) => {
