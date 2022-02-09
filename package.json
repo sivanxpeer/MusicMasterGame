@@ -7,7 +7,7 @@
     "dev": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "copy": "cp -r client/build server/index.js",
+    "copy": "cp -r client/build server/",
     "heroku-postbuild": "npm install --prefix client && npm run build --prefix client && npm run copy"
   },
   "keywords": [],
