@@ -26,7 +26,7 @@ app.use("/api/users",userRouter);
 app.use("/api/auth",authRouter);
 
 
-app.get("/", (req, res) => {console.log("getiing") })
+app.get("/home", (req, res) => {console.log("getiing") })
 
 
 app.get("/*", (req, res) => {
