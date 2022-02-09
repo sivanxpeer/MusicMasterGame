@@ -9,21 +9,25 @@ const userRouter = require("./routers/userRouter");
 const authRouter = require("./routers/authRouter");
 require('dotenv').config();
 
+const app = express();
+app.use(cors());
+app.use(express.json());
+
 
 const port = process.env.PORT || 5000;
+
+
 const publicPath = path.join(__dirname, "build");
 app.use(express.static(publicPath));
 
 
-const app = express();
 
-app.use(express.json());
-app.use(cors());
 
-app.use("/", songRouter);
+// app.use("/", songRouter);
+app.use("/", userRouter);
 
-app.use("/api/users",userRouter);
-app.use("/api/auth",authRouter);
+// app.use("/api/users",userRouter);
+// app.use("/api/auth",authRouter);
 
 
 app.get("/", (req, res) => {console.log("getiing") })
