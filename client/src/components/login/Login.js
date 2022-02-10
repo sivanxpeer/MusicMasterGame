@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import usersApi from '../../api/usersApi';
 import './Login.css';
 
@@ -34,20 +34,20 @@ const Login = () => {
 
   // }
   return <div>
-    <div>
-      <div>
-        <h2>New Here?</h2>
+    <div className="log-toggle">
+      <div className="goto">
+        <h2 className="form-title">New Here?</h2>
         {/* <Switch> */}
-        <NavLink exact to="/signup" className="nav-links" activeClassName='active'>
+        <Link to="/signup" className="link signup">
           SignUp
-        </NavLink>
+        </Link>
         {/* <Link to="/signup">
           <button className="btn">sign up</button>
         </Link> */}
       </div>
       <div>
-        <form className="form-container" onSubmit={handleSubmit}>
-          <h2>Log in</h2>
+        <form  className="form-container" onSubmit={handleSubmit}>
+          <h2 className="form-title">Log in</h2>
           <input
             type="email"
             placeholder="Email"

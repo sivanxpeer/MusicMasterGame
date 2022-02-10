@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Link, NavLink, Switch } from 'react-router-dom';
 import usersApi from '../api/usersApi';
-import "../components/login/Login";
+// import "../components/login/Login";
 
 const SignUp = () => {
     const [error, setError] = useState("");
@@ -33,22 +33,16 @@ const SignUp = () => {
 
     }
     return <div>
-        <div >
-            <div>
-                <h1>Welcome back!</h1>
-                <Switch>
-                <Router>
-                    <Switch>
-                        <Link to="/login">
-                            <button className="btn">Log in</button>
-                        </Link>
-                    </Switch>
-                </Router>
-                </Switch>
+        <div className="log-toggle">
+            <div className="goto login">
+                <h2 className="form-title">Welcome back!</h2>
+                <Link to="/login" className="link login">
+                    Log in
+                </Link>
             </div>
             <div>
                 <form className="form-container" onSubmit={handleSubmit}>
-                    <h2>Create Account</h2>
+                    <h2 className="form-title">Create Account</h2>
                     <input
                         type="text"
                         placeholder="First Name"

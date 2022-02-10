@@ -1,37 +1,43 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import "./NavBar.css";
 
 
 const NavBar = () => {
+  const handleLogOut=()=>{
+    localStorage.removeItem("token");
+    window.location.reload();
+
+  }
   return <>
     <nav className="navbar">
       <div className="nav-container">
         <ul className="nav-menu">
           <li className="nav-item">
-            <NavLink exact to="/" className="nav-links" activeClassName='active'>
+            <Link to="/" className="nav-links" >
               Home
-            </NavLink>
+            </Link>
           </li>
           <li className="nav-item">
-            <NavLink exact to="/play" className="nav-links" activeClassName='active'>
+            <Link to="/play" className="nav-links" >
               Play
-            </NavLink>
+            </Link>
           </li>
           <li className="nav-item disp">
-            <NavLink exact to="/categories" className="nav-links categories" activeClassName='active'>
+            <Link to="/categories" className="nav-links categories" >
               Categories
-            </NavLink>
+            </Link>
           </li>
           <li className="nav-item disp" >
-            <NavLink exact to="/leaders" className="nav-links" activeClassName='active'>
+            <Link to="/leaders" className="nav-links" >
               Leaders
-            </NavLink>
+            </Link>
           </li>
           <li className="nav-item">
-            <NavLink exact to="/logout" className="nav-links last-link" activeClassName='active'>
+            <Link to="/logout" className="nav-links last-link" 
+            onClick={handleLogOut}>
               Log Out
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </div>

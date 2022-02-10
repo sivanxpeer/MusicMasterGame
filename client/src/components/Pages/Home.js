@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Login from "../login/Login";
-import SignUp from "../SignUp";
+// import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom'
+// import Login from "../login/Login";
+// import SignUp from "../SignUp";
 import Register from "../Register";
 
 const Home = () => {
@@ -9,12 +9,12 @@ const Home = () => {
     <h1>MUSIC MASTER</h1>
     <Register>
     </Register>
-    <Router>
+    {/* <Router>
       <Switch>
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={SignUp} />
       </Switch>
-    </Router>
+      </Router> */}
     {/* <button className="btn">
       <NavLink exact to="/login" className="nav-links" activeClassName='active'>
         login

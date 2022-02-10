@@ -1,14 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     return <div className="register">
-        <NavLink exact to="/login">
+        <Link to="/login">
             <button className="btn">Login</button>
-        </NavLink>
-        <NavLink exact to="/signup">
+        </Link>
+        <Link to="/signup">
             <button className="btn">Sign Up</button>
-        </NavLink>
+        </Link>
     </div>;
 };
 

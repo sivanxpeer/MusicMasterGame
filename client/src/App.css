@@ -29,6 +29,23 @@ h1 {
   font-size: 1.2em;
   color: var(--headings-color);
 }
+a{
+  text-decoration: none;
+}
+form{
+display:flex;
+flex-direction: column;
+gap: 3px;
+}
+
+input{
+  width: 80%;
+  font-size: 11px;
+  border: none;
+  font-family: var(--headings-font);
+  /* border-radius: 2%; */
+  padding: 3%;
+}
 
 .pages {
   height:100%;
@@ -63,7 +80,6 @@ h1 {
   border: none;
   display: block;
   box-shadow: 0px 0px 5px 0px rgba(172,59,97,0.5);
-  /* text-decoration: none; */
 }
 
 .btn:hover {
@@ -79,6 +95,59 @@ h1 {
   justify-content:center;
 }
 
+.log-toggle{
+  width:70%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin:auto;
+  /* border: 2px solid black; */
+}
+
+.goto{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:3px solid var(--btn-color);
+  
+}
+
+.link{
+  text-decoration: none;
+  /* border: 1px solid var(--sub-heading); */
+  font-size:14px;
+  color:var(--sub-heading);
+}
+
+.form-container{
+  /* width:10%; */
+  border:3px solid var(--btn-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title{
+  color:var(--sub-heading);
+  font-size: 22px;
+}
+
+.error-display{
+  color: red;
+  font-size: 10px;
+}
+
+.nav-links {
+  color: var(--sub-heading);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+  /* margin:auto; */
+}
 @media (max-width: 500px) {
   h1 {
     margin: 200px 0 0 0;
