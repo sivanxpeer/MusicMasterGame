@@ -3,7 +3,7 @@ const { User } = require("../models/User");
 const Joi = require("joi");
 const bcrypt = require("bcrypt");
 
-authRouter.post("/", async (req, res) => {
+authRouter.post("/api/auth", async (req, res) => {
     try {
         const {error} = validate(req.body);
         if(error){
@@ -33,5 +33,9 @@ const validate =(data)=>{
     })
     return schema.validate(data);
 }
+
+// authRouter.get("/api/users",async(req, res)=>{
+   
+// })
 
 module.exports = authRouter;

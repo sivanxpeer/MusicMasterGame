@@ -1,13 +1,14 @@
 const express = require('express');
 const path = require("path");
 const cors = require("cors");
-const cookieParser = require("cookie-parser");
+// const cookieParser = require("cookie-parser");
 const songRouter = require("./routers/songRouter");
 require("./db/mongoose");
 require("./models/Song");
 require("./models/User");
-const userRouter = require("./routers/userRouter");
-const authRouter = require("./routers/authRouter");
+
+const {userRouter} = require("./routers/userRouter");
+const  authRouter  = require("./routers/authRouter");
 require('dotenv').config();
 
 const app = express();
@@ -25,10 +26,9 @@ app.use(express.static(publicPath));
 
 
 app.use("/", songRouter);
-app.get("/api/users", userRouter);
+app.use("/", userRouter);
 
-app.use("/",userRouter);
-app.use("/api/auth",authRouter);
+app.use("/", authRouter);
 
 
 // app.get("/", (req, res) => {console.log("getiing") })

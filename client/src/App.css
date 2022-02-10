@@ -96,22 +96,21 @@ input{
 }
 
 .log-toggle{
-  width:70%;
+  width:60%;
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
-  margin:auto;
-  /* border: 2px solid black; */
+  margin:auto;  
 }
 
 .goto{
-  width: 20%;
+  padding:2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border:3px solid var(--btn-color);
-  
+ 
 }
 
 .link{
@@ -133,7 +132,9 @@ input{
 .form-title{
   color:var(--sub-heading);
   font-size: 22px;
+  backdrop-filter: blur(2px);
 }
+
 
 .error-display{
   color: red;

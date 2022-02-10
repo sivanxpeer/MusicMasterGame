@@ -1,6 +1,6 @@
-const User= require('../models/User');
+const {User} = require('../models/User');
 
-const createUser =async (req, res) => {
+const createUser = async (req, res) => {
     try {
         const { error } = validate(req.body);
         if (error) {
@@ -12,24 +12,26 @@ const createUser =async (req, res) => {
         }
 
         const salt = await bcrypt.genSalt(Number(process.env.SALT))
-        const hashPassword = await bcrypt.hash(req.body.password,salt)
+        const hashPassword = await bcrypt.hash(req.body.password, salt)
 
-        await new User({...req.body,password:hashPassword}).save();
-        res.status(201).send({ message: "USer created"})
+        await new User({ ...req.body, password: hashPassword }).save();
+        res.status(201).send({ message: "USer created" })
 
     } catch (err) {
-        res.status(500).send({ message: "Internal server error"})
+        res.status(500).send({ message: "Internal server error" })
     }
 }
 
-const getAllUsers=async(req,res)=>{
+const getAllUsers = async (req, res) => {
     try {
-        const users = await User.find();
+        const users = await User.find({});
+        // console.log(users)
         res.status(200).send(users);
     }
     catch (err) {
+        console.log("check")
         res.status(400).send(err.message);
     }
 }
 
-module.exports ={createUser,getAllUsers}
+module.exports = { createUser, getAllUsers }
