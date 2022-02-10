@@ -26,8 +26,8 @@ app.use(express.static(publicPath));
 app.use("/", songRouter);
 app.get("/users", userRouter);
 
-// app.use("/api/users",userRouter);
-// app.use("/api/auth",authRouter);
+app.use("/api/users",userRouter);
+app.use("/api/auth",authRouter);
 
 
 // app.get("/", (req, res) => {console.log("getiing") })
