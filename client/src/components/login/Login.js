@@ -4,20 +4,24 @@ import Api from '../../api/api';
 import './Login.css';
 
 const Login = () => {
+  
   const [error, setError] = useState("");
   const [data, setData] = useState({
     email: '',
     password: ''
-  })
+  });
+
   const handleChange = ({ currentTarget: input }) => {
     setData({ ...data, [input.name]: input.value });
   }
 
   const handleSubmit = async (e) => {
+    console.log("clicked")
     e.preventDefault();
     try {
       console.log(data);
       const { data: res } = await Api.post("/api/auth", data);
+      console.log(res.data,"token")
       localStorage.setItem("token", res.data);
       window.location = "/";
       console.log(res.message);
@@ -46,7 +50,7 @@ const Login = () => {
         </Link> */}
       </div>
       <div>
-        <form  className="form-container" onSubmit={handleSubmit}>
+        <form className="form-container" onSubmit={handleSubmit}>
           <h2 className="form-title">Log in</h2>
           <input
             type="email"

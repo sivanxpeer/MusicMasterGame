@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Link, NavLink, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Api from '../api/api';
 // import "../components/login/Login";
 

@@ -8,7 +8,7 @@ require("./models/Song");
 require("./models/User");
 
 const {userRouter} = require("./routers/userRouter");
-const  authRouter  = require("./routers/authRouter");
+const  {authRouter}  = require("./routers/authRouter");
 require('dotenv').config();
 
 const app = express();
@@ -27,7 +27,6 @@ app.use(express.static(publicPath));
 
 app.use("/", songRouter);
 app.use("/", userRouter);
-
 app.use("/", authRouter);
 
 

@@ -3,6 +3,9 @@ const { User } = require("../models/User");
 const Joi = require("joi");
 const bcrypt = require("bcrypt");
 
+//signup 
+
+
 authRouter.post("/api/auth", async (req, res) => {
     try {
         const {error} = validate(req.body);
@@ -38,4 +41,4 @@ const validate =(data)=>{
    
 // })
 
-module.exports = authRouter;
+module.exports = {authRouter};

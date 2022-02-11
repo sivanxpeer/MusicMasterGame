@@ -1,4 +1,6 @@
-const {User} = require('../models/User');
+const  {User, validate}  = require('../models/User');
+const bcrypt = require("bcrypt");
+
 
 const createUser = async (req, res) => {
     try {
@@ -6,6 +8,7 @@ const createUser = async (req, res) => {
         if (error) {
             return res.status(400).send({ message: error.details[0].message });
         }
+
         const user = await User.findOne({ email: req.body.email })
         if (user) {
             return res.status(200).send({ message: "user already exists" });
@@ -24,7 +27,7 @@ const createUser = async (req, res) => {
 
 const getAllUsers = async (req, res) => {
     try {
-        const users = await User.find({});
+        const users = await User.find();
         // console.log(users)
         res.status(200).send(users);
     }
@@ -34,4 +37,7 @@ const getAllUsers = async (req, res) => {
     }
 }
 
-module.exports = { createUser, getAllUsers }
+module.exports = {
+    createUser,
+    getAllUsers,
+}
