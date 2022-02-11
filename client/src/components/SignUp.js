@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Link, NavLink, Switch } from 'react-router-dom';
-import usersApi from '../api/usersApi';
+import Api from '../api/api';
 // import "../components/login/Login";
 
 const SignUp = () => {
@@ -20,9 +20,9 @@ const SignUp = () => {
         e.preventDefault();
         try {
             console.log(data);
-            const { data: res } = await usersApi.post("/api/users", data);
-            <NavLink to="/login">
-            </NavLink>
+            const { data: res } = await Api.post("/api/users", data);
+            <Link to="/login">
+            </Link>
             console.log(res.message);
         }
         catch (error) {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import usersApi from '../../api/usersApi';
+import Api from '../../api/api';
 import './Login.css';
 
 const Login = () => {
@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
     try {
       console.log(data);
-      const { data: res } = await usersApi.post("/api/auth", data);
+      const { data: res } = await Api.post("/api/auth", data);
       localStorage.setItem("token", res.data);
       window.location = "/";
       console.log(res.message);
