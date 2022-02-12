@@ -11,10 +11,12 @@ import Answers from './answers/Answers';
 //TODO: -- USERS AUTH 
 // -- Categories
 // -- timer 
+// -- fail a question if timer ends with no response
 // -- music for countdown, correct answer, wrong answer
-// -- count points and save to users 
+// -- count points and save to users , calc time in points for
 // -- leaders page 
 // -- set number of questions to a round , update countQuestions
+// -- reorganize my files
 
 const GamePage = () => {
     const [currentSongUrl, setCurrentSongUrl] = useState([]);
