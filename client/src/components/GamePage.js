@@ -9,6 +9,7 @@ import Answers from './answers/Answers';
 
 
 //TODO: -- USERS AUTH 
+// -- make sure im not repeating songs on the same round
 // -- Categories
 // -- timer 
 // -- fail a question if timer ends with no response
@@ -17,6 +18,8 @@ import Answers from './answers/Answers';
 // -- leaders page 
 // -- set number of questions to a round , update countQuestions
 // -- reorganize my files
+// -- relocate time and score 
+
 
 const GamePage = () => {
     const [currentSongUrl, setCurrentSongUrl] = useState([]);
@@ -106,7 +109,7 @@ const GamePage = () => {
         setScore(score + 5);
         console.log("correct")
         // nextSong();
-        setCountQuestions(countQuestions+1);
+        setCountQuestions(countQuestions + 1);
         return window.location.reload();
     }
 
@@ -114,7 +117,7 @@ const GamePage = () => {
         pause();
         console.log("wrong")
         // nextSong();
-        setCountQuestions(countQuestions+1);
+        setCountQuestions(countQuestions + 1);
         return window.location.reload();
     }
 
@@ -203,8 +206,11 @@ const GamePage = () => {
         }
     }
     return <div>
-        <div className="score">
-            {score}
+        <div className="clock-score-container">
+            <div className="score">
+                {score}
+            </div>
+            <div className="clk">{timer}</div>
         </div>
         {answers && <Answers
             // score={score}
@@ -212,7 +218,7 @@ const GamePage = () => {
             handleAnswers={handleAnswers}
         />}
         {/* {songs&& startGame} */}
-    </div>;
+    </div>
 };
 
 export default GamePage;
