@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import Song from './Song';
+// import Song from './Song';
 import songsApi from '../api/api';
-import Category from './Pages/Category';
 // import Category from './Pages/Category';
-import CountDown from '../assets/Audio/5sec.mp3'
+// import Category from './Pages/Category';
 import Answers from './answers/Answers';
 
+import CountDown from '../assets/Audio/5sec.mp3'
+import Correct from '../assets/Audio/correct.mp3'
+import Buzzer from '../assets/Audio/buzzer.mp3'
 
 //TODO: -- USERS AUTH 
 // -- make sure im not repeating songs on the same round
@@ -19,7 +21,8 @@ import Answers from './answers/Answers';
 // -- set number of questions to a round , update countQuestions
 // -- reorganize my files
 // -- relocate time and score 
-// --after round end redirect to leaders/ play again 
+// -- after round end redirect to leaders/ play again and dont display a new q
+
 
 
 const GamePage = () => {
@@ -95,7 +98,6 @@ const GamePage = () => {
     };
 
     const handleAnswers = (e) => {
-        // pause();
         // console.log("e.target and songTitle", e.target.outerText, songs[index].songTitle);
         if (songs[index].songTitle.toLowerCase() === e.target.innerText.toLowerCase()) {
             rightAnswer();
@@ -107,35 +109,33 @@ const GamePage = () => {
 
     const rightAnswer = () => {
         console.log("correct")
-        // pause();
+        const newPlayer = player;
+		newPlayer.src = Correct;
+		setPlayer(newPlayer);
+		player.play();
+        // setPlayer(Correct).play();
+        // player.play(player.src);
         console.log("PLAYER", player);
-        // player.currentSrc.pause();
-        // setTimeout(() => {player.pause()},500)
-        // Audio(player.pause());
-        // nextSong();
         setTimeout(() => {
-            setPlayer(CountDown);
             setScore(score + 5);
             setCountQuestions(countQuestions + 1);
             if (countQuestions < 8) {
                 startGame();
             }
             else window.location.replace("/");
-        }, 2000)
-        // wait();
-        // return window.location.reload();
+        }, 2500)
     }
 
     const wrongAnswer = () => {
         console.log("wrong")
-        // nextSong();
+        const newPlayer = player;
+		newPlayer.src = Buzzer;
+		setPlayer(newPlayer);
+		player.play();
         setTimeout(() => {
-            // pause();
             setCountQuestions(countQuestions + 1);
             startGame();
-        }, 2000)
-
-        // return window.location.reload();
+        }, 2500)
     }
 
     const getRandomAnswers = async () => {
@@ -180,7 +180,7 @@ const GamePage = () => {
             // console.log(songs.splice(randSongIndex, 1));
             if (randSong) {
                 setCurrentSongUrl(randSong.songUrl);
-                player.play();//
+                // player.play();//
                 let randAnswers = await getRandomAnswers();
                 console.log(index, randSong.songTitle)
                 randAnswers.push(String(randSong.songTitle));
