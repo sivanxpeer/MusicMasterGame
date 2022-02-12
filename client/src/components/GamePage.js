@@ -13,6 +13,7 @@ import Buzzer from '../assets/Audio/buzzer.mp3'
 // -- make sure im not repeating songs on the same round
 // -- leaders page 
 // -- Categories
+// -- when exiting play page - stop music 
 // -- timer                                                          V
 // -- fail a question if timer ends with no response                 V
 // -- music for countdown, correct answer, wrong answer              V
@@ -31,7 +32,7 @@ const GamePage = () => {
     const [player, setPlayer] = useState(new Audio(CountDown));
     const [answers, setAnswers] = useState([]);
     const [kanyeSongs, setKanyeSongs] = useState([])
-    const [timer, setTimer] = useState(16);
+    const [timer, setTimer] = useState(5);
     const [score, setScore] = useState(0);
     const [countQuestions, setCountQuestions] = useState(0);
 
@@ -50,8 +51,8 @@ const GamePage = () => {
     };
 
     useEffect(() => {
-        // wait();
         getSongs();
+        wait();
         startGame();
     }, [player, score]);
 
@@ -68,21 +69,15 @@ const GamePage = () => {
     useEffect(() => {
         if (timer === 0) {
             console.log("TIME LEFT IS 0");
-
             wrongAnswer();
-            // setTimer(null)
         }
-
         // exit early when we reach 0
         if (!timer) return;
-
         // save intervalId to clear the interval when the
         // component re-renders
         const intervalId = setInterval(() => {
-
             setTimer(timer - 1);
         }, 1000);
-
         // clear interval on re-render to avoid memory leaks
         return () => clearInterval(intervalId);
         // add timer as a dependency to re-rerun the effect
@@ -130,7 +125,7 @@ const GamePage = () => {
             if (countQuestions < 8) {
                 startGame();
             }
-            else window.location.replace("/play");
+            else window.location.replace("/leaders");
         }, 2500)
     }
 
@@ -170,10 +165,8 @@ const GamePage = () => {
     }
 
     const startGame = async () => {
-        setTimeout(() =>{
-
-        },2000)
-        setTimer(15);
+        // setTimeout(() =>{
+        // },5000)
         console.log(currentSongUrl, player)
         console.log("history", history);
         const randSongIndex = Math.floor(Math.random() * songs.length);
@@ -183,6 +176,7 @@ const GamePage = () => {
             const randSong = songs[randSongIndex];
             // console.log(songs.splice(randSongIndex, 1));
             if (randSong) {
+
                 setCurrentSongUrl(randSong.songUrl);
                 // player.play();//
                 let randAnswers = await getRandomAnswers();
@@ -191,6 +185,7 @@ const GamePage = () => {
                 console.log(randAnswers);
                 shuffle(randAnswers);
                 setAnswers(randAnswers);
+                setTimer(15);
 
                 let newPlayer = player;
                 // player.volume = 0.35;
@@ -206,15 +201,28 @@ const GamePage = () => {
             console.log(err);
         }
     }
+    const wait = () => {
+        setTimeout(() => {
+
+        }, 2000)
+    }
     return <div>
         <div className="clock-score-container">
-            <div className="score">
-                {score}
+            <div className="clock">
+                {/* <div className="clk-heading">Time:</div> */}
+                <div className="clk-number" >{timer}</div>
             </div>
-            <div className="clk" >{timer}</div>
+            <div className="score ">
+                <div className="score-heading disp">SCORE:<br />
+                    <div className="score-number disp">{score}</div>
+                </div>
+            </div>
+
         </div>
+
         {answers && <Answers
             // score={score}
+
             answers={answers}
             handleAnswers={handleAnswers}
         />}
