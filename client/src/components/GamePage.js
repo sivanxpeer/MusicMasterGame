@@ -19,6 +19,7 @@ import Answers from './answers/Answers';
 // -- set number of questions to a round , update countQuestions
 // -- reorganize my files
 // -- relocate time and score 
+// --after round end redirect to leaders/ play again 
 
 
 const GamePage = () => {
@@ -36,26 +37,24 @@ const GamePage = () => {
     const history = useHistory();
     const getSongs = async () => {
         try {
-            //  player.play();
-            await play();
+            player.play(player.src);
             const { data } = await songsApi.get("/songs");
             setSongs(await data);
-            setCurrentSongUrl(data[0].songUrl); //get a random song
-            // player.pause();
-            console.log(currentSongUrl);
-            setPlayer(currentSongUrl);
-            setIndex(index + 1);
+            setCurrentSongUrl(player.src); //get a random song
+            console.log("HERE", currentSongUrl, player);
         } catch (e) {
             console.log(e);
         }
     };
 
     useEffect(() => {
-        wait();
+        // wait();
         getSongs();
-        startGame();
-
-        pause();
+        if (countQuestions !== 5) {
+            // pause();
+            // player.play(currentSongUrl);
+            startGame();
+        }
     }, [player, score]);
 
     const getSongsByCategory = () => {
@@ -83,8 +82,10 @@ const GamePage = () => {
         }
         // pause();
         setIndex(index + 1);
+        // setIndex(index);
         setCurrentSongUrl(songs[index].songUrl)
-        play();
+        currentSongUrl.play();
+        // play();
         // player.src = currentSongUrl;
         setPlayer(songs[index + 1].songUrl);
         console.log("player.src", player.src)
@@ -105,20 +106,36 @@ const GamePage = () => {
     }
 
     const rightAnswer = () => {
-        pause();
-        setScore(score + 5);
         console.log("correct")
+        // pause();
+        console.log("PLAYER", player);
+        // player.currentSrc.pause();
+        // setTimeout(() => {player.pause()},500)
+        // Audio(player.pause());
         // nextSong();
-        setCountQuestions(countQuestions + 1);
-        return window.location.reload();
+        setTimeout(() => {
+            setPlayer(CountDown);
+            setScore(score + 5);
+            setCountQuestions(countQuestions + 1);
+            if (countQuestions < 8) {
+                startGame();
+            }
+            else window.location.replace("/");
+        }, 2000)
+        // wait();
+        // return window.location.reload();
     }
 
     const wrongAnswer = () => {
-        pause();
         console.log("wrong")
         // nextSong();
-        setCountQuestions(countQuestions + 1);
-        return window.location.reload();
+        setTimeout(() => {
+            // pause();
+            setCountQuestions(countQuestions + 1);
+            startGame();
+        }, 2000)
+
+        // return window.location.reload();
     }
 
     const getRandomAnswers = async () => {
@@ -144,61 +161,41 @@ const GamePage = () => {
         }
     }
 
-    const play = async () => {
-        if (!isPlaying) {
-            // console.log("play:", player)
-            const play = new Audio(player.src);
-            await play.play()
-            setIsPlaying(true);
-        }
-        else {
-            setIsPlaying(false);
-            pause();
-        }
-    }
-
-    const pause = () => {
-        if (isPlaying) {
-            console.log("paused", currentSongUrl);
-            setIsPlaying(false);
-            return () => player.pause();
-        }
-        else {
-            setIsPlaying(true);
-            play();
-        }
-    }
-
     const wait = () => {
-        setTimeout(() => { console.log("timeout") }, 5000)
+        setTimeout(() => { console.log("timeout") }, 5500)
     }
 
     const startGame = async () => {
+        // wait();
+        console.log(currentSongUrl, player)
         console.log("history", history);
-        play();
-        wait();
+        // while(timer>0){
+        // play();
+        // }
         const randSongIndex = Math.floor(Math.random() * songs.length);
         setIndex(randSongIndex);
         // console.log(index,songs[index].songTitle);
-
         try {
             const randSong = songs[randSongIndex];
             // console.log(songs.splice(randSongIndex, 1));
             if (randSong) {
                 setCurrentSongUrl(randSong.songUrl);
+                player.play();//
                 let randAnswers = await getRandomAnswers();
                 console.log(index, randSong.songTitle)
-
                 randAnswers.push(String(randSong.songTitle));
                 console.log(randAnswers);
                 shuffle(randAnswers);
                 setAnswers(randAnswers);
+
                 let newPlayer = player;
                 // player.volume = 0.35;
                 { newPlayer.src = randSong.songUrl }
                 setPlayer(newPlayer);
-                // player.play(currentSongUrl);
-                await play();
+                // player.play();
+                // await play();
+                player.play(currentSongUrl)
+                // currentSongUrl.play();
             }
         }
         catch (err) {
@@ -217,7 +214,6 @@ const GamePage = () => {
             answers={answers}
             handleAnswers={handleAnswers}
         />}
-        {/* {songs&& startGame} */}
     </div>
 };
 
