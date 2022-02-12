@@ -5,7 +5,6 @@ const {createUser,getAllUsers,login}= require( '../controllers/userController');
 
 userRouter.post("/api/users",createUser); 
 userRouter.get("/api/users",getAllUsers);
-
 userRouter.post("/api/users/login", login);
 
 

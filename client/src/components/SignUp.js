@@ -30,7 +30,7 @@ const SignUp = () => {
                 setError(error.response.data.message)
             }
         }
-
+        return (<div>user created</div>)
     }
     return <div>
         <div className="log-toggle">
@@ -80,6 +80,7 @@ const SignUp = () => {
                         className="form-input"
                     ></input>
                     {error && <div className="error-display">{error}</div>}
+                    {/* {error==="" && <div className="error-display">User Created</div>} */}
                     <button type="submit" className="submit btn">Sign Up</button>
                 </form>
             </div>
