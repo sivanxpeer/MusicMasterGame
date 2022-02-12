@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 
-const Song = ({ songUrl,songs,nextSong,index,setIndex }) => {
+const Song = ({ songUrl,songs,nextSong,index,setIndex,player }) => {
 const [isPlaying,setisPlaying]=useState(true);
 
 
@@ -9,10 +9,12 @@ const [isPlaying,setisPlaying]=useState(true);
         if(isPlaying){
             console.log("data:",songs)
             // songUrl.play(songUrl.src)
-            songUrl.play(songs[index].songUrl.src)
+            // player.src=songs[index].src;
+            player.play();
+
         }
         else{
-            songUrl.pause(songUrl.src);
+            player.pause(songUrl.src);
         }
     }
 

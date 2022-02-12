@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GamePage from '../GamePage';
 
 const Play = () => {
-  return <div>
-      <h1>Play</h1>
-      <GamePage></GamePage>
+  // const [clicked, setClicked] = useState(false);
+  // const handleStart = () => { 
+  //   setClicked(!clicked)
+  // }
+  return <div className="start">
+    {/* <button className="btn" onClick={handleStart}>start</button> */}
+    {/* {clicked&& */}
+    <GamePage></GamePage>
+    {/* } */}
   </div>;
 };
 

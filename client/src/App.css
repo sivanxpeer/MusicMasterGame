@@ -29,9 +29,11 @@ h1 {
   font-size: 1.2em;
   color: var(--headings-color);
 }
+
 a{
   text-decoration: none;
 }
+
 form{
 display:flex;
 flex-direction: column;
@@ -69,6 +71,8 @@ input{
 
 .btn {
   font-family: 'Baloo Bhaijaan 2', cursive;
+  font-size: 18px;
+  font-weight:bold;
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
@@ -101,6 +105,13 @@ input{
   justify-content: space-evenly;
   gap: 2rem;
   margin:auto;  
+}
+
+.start{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .goto{
@@ -159,10 +170,14 @@ input{
     flex-direction: column;
   }
   .btn {
+    font-size: 15px;
     font-weight: bold;
   }
   .cat{
     margin-top: 10rem;
+  }
+  .answers{
+    margin-top:6rem;
   }
   
 }
