@@ -1,10 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import Song from './Song';
 import songsApi from '../api/api';
 import Category from './Pages/Category';
 // import Category from './Pages/Category';
 import CountDown from '../assets/Audio/5sec.mp3'
 import Answers from './answers/Answers';
+
+
+//TODO: -- USERS AUTH 
+// -- Categories
+// -- timer 
+// -- music for countdown, correct answer, wrong answer
+// -- count points and save to users 
+// -- leaders page 
+// -- set number of questions to a round , update countQuestions
 
 const GamePage = () => {
     const [currentSongUrl, setCurrentSongUrl] = useState([]);
@@ -18,7 +28,7 @@ const GamePage = () => {
     const [countQuestions, setCountQuestions] = useState(0);
     const [isPlaying, setIsPlaying] = useState(true);
     // let song = new Audio(currentSongUrl);
-
+    const history = useHistory();
     const getSongs = async () => {
         try {
             //  player.play();
@@ -41,7 +51,7 @@ const GamePage = () => {
         startGame();
 
         pause();
-    }, [player]);
+    }, [player, score]);
 
     const getSongsByCategory = () => {
         const songsByCat = songs.filter((song) => {
@@ -59,6 +69,7 @@ const GamePage = () => {
     }
 
     const nextSong = async () => {
+        // pause();
         console.log(index)
         if (countQuestions === 10) {
             return (<div>
@@ -68,7 +79,7 @@ const GamePage = () => {
         // pause();
         setIndex(index + 1);
         setCurrentSongUrl(songs[index].songUrl)
-        await play();
+        play();
         // player.src = currentSongUrl;
         setPlayer(songs[index + 1].songUrl);
         console.log("player.src", player.src)
@@ -90,14 +101,19 @@ const GamePage = () => {
 
     const rightAnswer = () => {
         pause();
+        setScore(score + 5);
         console.log("correct")
-        nextSong();
+        // nextSong();
+        setCountQuestions(countQuestions+1);
+        return window.location.reload();
     }
 
     const wrongAnswer = () => {
         pause();
         console.log("wrong")
-        nextSong();
+        // nextSong();
+        setCountQuestions(countQuestions+1);
+        return window.location.reload();
     }
 
     const getRandomAnswers = async () => {
@@ -153,6 +169,7 @@ const GamePage = () => {
     }
 
     const startGame = async () => {
+        console.log("history", history);
         play();
         wait();
         const randSongIndex = Math.floor(Math.random() * songs.length);
@@ -165,7 +182,7 @@ const GamePage = () => {
             if (randSong) {
                 setCurrentSongUrl(randSong.songUrl);
                 let randAnswers = await getRandomAnswers();
-                console.log(index,randSong.songTitle)
+                console.log(index, randSong.songTitle)
 
                 randAnswers.push(String(randSong.songTitle));
                 console.log(randAnswers);
@@ -173,7 +190,7 @@ const GamePage = () => {
                 setAnswers(randAnswers);
                 let newPlayer = player;
                 // player.volume = 0.35;
-                {newPlayer.src= randSong.songUrl}
+                { newPlayer.src = randSong.songUrl }
                 setPlayer(newPlayer);
                 // player.play(currentSongUrl);
                 await play();
@@ -184,7 +201,11 @@ const GamePage = () => {
         }
     }
     return <div>
+        <div className="score">
+            {score}
+        </div>
         {answers && <Answers
+            // score={score}
             answers={answers}
             handleAnswers={handleAnswers}
         />}
