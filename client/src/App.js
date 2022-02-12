@@ -20,12 +20,12 @@ function App() {
         <Navbar></Navbar>
         <div className="pages">
           <Switch>
-              {/* <Link to="/register" component={Register} />  */}
+            {/* <Link to="/register" component={Register} />  */}
             <Route exact path="/" component={Home} />
             <Route exact path="/leaders" component={Leaders} />
-          {/* {user&&  <Route exact path="/play" component={Play} />} */}
-          { <Route exact path="/play" component={Play} />}
-            <Route exact path="/categories" component={Category} />
+            {user && <Route exact path="/play" component={Play} />}
+            {/* { <Route exact path="/play" component={Play} />} */}
+            {user && <Route exact path="/categories" component={Category} />}
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={SignUp} />
