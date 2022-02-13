@@ -23,7 +23,7 @@ const Login = () => {
       const { data: res } = await Api.post("/api/auth", data);
       console.log(res.data,"token")
       localStorage.setItem("token", res.data);
-      window.location = "/";
+      window.location = "/play";
       console.log(res.message);
     }
     catch (error) {
