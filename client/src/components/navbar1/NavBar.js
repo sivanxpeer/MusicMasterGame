@@ -6,9 +6,9 @@ import "./NavBar.css";
 const NavBar = () => {
   const handleLogOut=()=>{
     localStorage.removeItem("token");
-    window.location.reload();
-
+    window.location.replace("/");
   }
+
   return <>
     <nav className="navbar">
       <div className="nav-container">

@@ -6,22 +6,26 @@ import Answers from './answers/Answers';
 import CountDown from '../assets/Audio/5sec.mp3'
 import Correct from '../assets/Audio/correct.mp3'
 import Buzzer from '../assets/Audio/buzzer.mp3'
+import Leaders from './Pages/Leaders';
 
 //TODO: 
-// -- USERS AUTH                         
 // -- count points and save to users
-// -- make sure im not repeating songs on the same round
 // -- leaders page 
 // -- Categories
 // -- when exiting play page - stop music 
+//--  and dont display a new q    
+// -- make sure im not repeating songs on the same round
+// -- reorganize my files
+
+
+// -- USERS AUTH                                                     V
 // -- timer                                                          V
 // -- fail a question if timer ends with no response                 V
 // -- music for countdown, correct answer, wrong answer              V
 // -- calc time in points                                            V
 // -- set number of questions to a round , update countQuestions     V
-// -- relocate time and score 
-// -- after round end redirect to leaders and dont display a new q
-// -- reorganize my files
+// -- relocate time and score                                        V
+// -- after round end redirect to leaders                            V
 
 
 
@@ -171,14 +175,11 @@ const GamePage = () => {
         console.log("history", history);
         const randSongIndex = Math.floor(Math.random() * songs.length);
         setIndex(randSongIndex);
-        // console.log(index,songs[index].songTitle);
         try {
             const randSong = songs[randSongIndex];
-            // console.log(songs.splice(randSongIndex, 1));
             if (randSong) {
 
                 setCurrentSongUrl(randSong.songUrl);
-                // player.play();//
                 let randAnswers = await getRandomAnswers();
                 console.log(index, randSong.songTitle)
                 randAnswers.push(String(randSong.songTitle));
@@ -188,13 +189,10 @@ const GamePage = () => {
                 setTimer(15);
 
                 let newPlayer = player;
-                // player.volume = 0.35;
+                player.volume = 0.7;
                 newPlayer.src = randSong.songUrl
                 setPlayer(newPlayer);
-                // player.play();
-                // await play();
                 player.play(currentSongUrl)
-                // currentSongUrl.play();
             }
         }
         catch (err) {
@@ -209,7 +207,6 @@ const GamePage = () => {
     return <div>
         <div className="clock-score-container">
             <div className="clock">
-                {/* <div className="clk-heading">Time:</div> */}
                 <div className="clk-number" >{timer}</div>
             </div>
             <div className="score ">
@@ -226,6 +223,7 @@ const GamePage = () => {
             answers={answers}
             handleAnswers={handleAnswers}
         />}
+        <Leaders score={score}></Leaders>
     </div>
 };
 

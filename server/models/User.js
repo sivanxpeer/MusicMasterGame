@@ -19,7 +19,15 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
-    }
+    },
+    score:{},
+    bestScore:{},
+    category:{},
+    tokens:[{token:{
+        type: String,
+        required: true
+    }}]
+
 });
 
 userSchema.methods.generateAuthToken = function () {
